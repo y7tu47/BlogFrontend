@@ -13,7 +13,7 @@ export class PostComponent implements OnInit {
   crudeApis = inject(ApiService);
   activatedRoute = inject(ActivatedRoute);
 
-  baseUrl: string = "https://localhost:7119/Posts/";
+  baseUrl: string = "";
   post: BlogPost = {
     id:0,
     title : "",
