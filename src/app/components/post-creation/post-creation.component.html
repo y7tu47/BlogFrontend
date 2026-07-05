@@ -1,0 +1,21 @@
+<form [formGroup]="postForm" >
+
+    <div>
+      <label>Title</label>
+      <input formControlName="title" />
+      <div *ngIf="postForm.get('title')?.invalid && postForm.get('title')?.touched">
+        tilte is required
+      </div>
+    </div>
+  
+    <div>
+      <label>Content</label>
+      <input formControlName="content" />
+      <div *ngIf="postForm.get('content')?.invalid && postForm.get('content')?.touched">
+        content is required
+      </div>
+    </div>    
+  
+  
+    <button type="button"  (click)="createPost()">Submit</button>
+</form>

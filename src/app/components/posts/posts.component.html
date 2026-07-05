@@ -1,0 +1,7 @@
+<h3>Posts</h3>
+
+<ul class="nav nav-pills card-header-pills" *ngFor="let post of posts">
+    <li class="nav-item ms-1">
+        <button class="nav-link" [routerLink]="['/post/'+post.id]">{{post.title}}</button>
+    </li>        
+</ul>
